@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Guillaume Touya">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>MapMuxing</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/mapmuxing-style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="js/fancybox/jquery.fancybox.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+	<section  id="accueil">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="col-xs-1 hidden-sm" id="logo-xs"><img src="img/logos/logo_xs.png" alt="logo"></div>
+		<div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand languageFr" href="#" style="margin-left: 7px;margin-right: 7px;">Projet MapMuxing</a>
+		  <a class="navbar-brand languageEn" href="#" style="margin-left: 7px;">MapMuxing Project</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="languageFr" href="#accueil">Accueil</a></li>
+			<li><a class="languageFr" href="#presentation">Objectifs</a></li>
+			<li><a class="languageFr" href="#news">Actualités</a></li>
+            <li><a class="languageFr" href="#about">Consortium</a></li>
+			<li><a class="languageFr" href="#galerie">Galerie</a></li>
+			<li><a class="languageFr" href="#publis">Publications</a></li>
+			<li><a class="languageEn" href="#accueil">Home</a></li>
+			<li><a class="languageEn" href="#presentation">Objectives</a></li>
+			 <li><a class="languageEn" href="#news">News</a></li>
+            <li><a class="languageEn" href="#about">About</a></li>
+			<li><a class="languageEn" href="#galerie">Gallery</a></li>
+			<li><a class="languageEn" href="#publis">Publications</a></li>
+          </ul>
+		  <!--<form class="navbar-form pull-right hidden-sm">
+          <input type="text" style="width:150px" class="input-small languageFr" placeholder="Recherche">
+		  <input type="text" style="width:150px" class="input-small languageEn" placeholder="Research">
+          <button type="submit" class="btn btn-primary btn-xs languageFr"><span class="glyphicon glyphicon-search"></span> Chercher</button>
+		  <button type="submit" class="btn btn-primary btn-xs languageEn"><span class="glyphicon glyphicon-search"></span> Search</button>
+		  </form>-->
+          <a href="#" class="languageEn changeLangFr">
+          <img src="img/icons/1463755195_flag-france.png"  alt="" style="float: right; padding-top: 12px;" /></a>
+		  <a href="#" class="languageFr changeLangEn">
+          <img src="img/icons/1463755205_flag-united-kingdom.png" alt="" style="float: right;padding-top: 15px;" /></a>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+	</section>
+    <div class="container">
+
+      <div class="jumbotron">
+		<!--<h1>Projet MapMuxing</h1>-->
+		<div class="col-xs-8" id="logo-main"><img class="center-block" src="img/logos/logo_sm.png" alt="logo"></div>
+		<p class="languageFr"><strong>MapMuxing est un projet collaboratif de recherche visant à la conception de techniques de multiplexing cartographique. Le projet est mené par le laboratoire COGIT de l'IGN en partenariat avec l'INRIA Saclay et l'UMR GRED à Montpellier. Le projet est financé par l'ANR (ANR-14-CE24-0011-01) pour une durée de 42 mois (2014-2018).</strong></p>
+		<p class="languageFr"><a class="btn btn-primary btn-lg" href="#presentation">En savoir plus</a></p>
+		<p class="languageEn"><strong>MapMuxing is a collaborative research project aiming at the design of cartographic multiplexing techniques. The project is leaded by COGIT Lab from IGN France with INRIA Saclay and Montpellier University. The project is funded by ANR (the French national research agency ANR-14-CE24-0011-01) for 42 months (2014-2018).</strong></p>
+		<p class="languageEn"><a class="btn btn-primary btn-lg" href="#presentation">More</a></p>
+		<div class="col-xs-4" id="logo-ANR-funded"><img class="center-block" src="img/logos/label-ANR-bleu-CMJN.png"></div>
+      </div>
+
+    </div><!-- /.container -->
+
+	<!-- spacer section:logos -->
+	<section id="logos" class="section mar-top40 mar-bot40" data-stellar-background-ratio="0.8">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+					<div class="col-xs-4 col-sm-3 col-md-2"><img class="img_logo" src="img/logos/logo_ANR.gif" alt="ANR"></div>
+					<div class="col-xs-4 col-sm-3 col-md-2"><img class="img_logo" src="img/logos/logo_cap_site_web.png" alt="CapDigital"></div>
+					<div class="col-xs-4 col-sm-3 col-md-2"><img class="img_logo" src="img/logos/logo_systematic.png" alt="Systematic"></div>
+					<div class="col-xs-4 col-sm-3 col-md-1"><img class="img_logo" src="img/logos/IGN_log_RVB.gif" alt="IGN"></div>
+					<div class="col-xs-4 col-sm-3 col-md-1"><img class="img_logo" src="img/logos/Cogit.gif" alt="COGIT"></div>
+					<div class="col-xs-4 col-sm-3 col-md-2"><img class="img_logo" src="img/logos/logo_INRIA.png" alt="INRIA"></div>
+					<div class="col-xs-4 col-sm-3 col-md-2"><img class="img_logo" src="img/logos/gred-tout-seul.png" alt="GRED"></div>
+					<div class="col-xs-4"><a href="http://mapyear.org/"><img class="center-block" src="img/logos/IMY_logo_300x100.png" alt="IMY"></a></div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+	<section class="section mar-top50 mar-bot50"></section>
+
+
+	<!-- section presentation -->
+	<section id="presentation" class="section appear clearfix">
+		<div class="container">
+			<div class="row mar-bot50">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated languageFr" data-animation="bounceInUp">Présentation du projet</h2>
+						<h2 class="section-heading animated languageEn" data-animation="bounceInUp">Project description</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row mar-bot50 languageFr">
+				<p>Grâce à des applications comme <a href="http://maps.google.com" target="_blank">Google Maps</a>, <a href="http://www.openstreetmap.org/#map=17/48.84355/2.42267" target="_blank">OpenStreetMap</a>
+				ou le <a href="http://www.geoportail.gouv.fr" target="_blank">Géoportail</a> français, le grand public a facilement accès à de nombreuses
+				données géographiques. Les opérations liées à la combinaison de données et de représentations, ainsi que celles plus basiques liées à
+				la navigation, restent cependant difficiles. Par exemple, obtenir des détails sur un point d'intérêt tout en conservant une vue globale
+				d'un itinéraire demande un <strong>nombre d'actions et un effort cognitif importants</strong>. Pour les spécialistes, les problèmes sont encore plus
+				complexes et les exigences de performance plus grandes. Lors d'une crise liée à une catastrophe naturelle comme un tsunami, les
+				analystes doivent identifier rapidement les zones exposées et communiquer efficacement avec les acteurs sur le terrain. MapMuxing
+				réunit des chercheurs en <a href="http://www.agence-nationale-recherche.fr/" target="_blank"><abbr title="Interaction Homme-Machine">IHM</abbr></a> et en Géomatique
+				afin de proposer de nouvelles méthodes pour combiner différentes représentations cartographiques et naviguer efficacement entre ces représentations. Ces méthodes
+				combineraient des techniques de cartographie automatique comme la <a href="http://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ralisation_cartographique" target="_blank">généralisation
+				cartographique</a> ou la <a href="http://mapstyle.ign.fr" target="_blank">stylisation cartographique</a>, et des techniques IHM innovantes (comme la
+				<a href="http://dx.doi.org/10.1145/2380116.2380150" target="_blank">JellyLens</a> permettant de combiner les représentations cartographiques). L'application principale du
+				projet est la navigation dans les représentations cartographique pour la gestion des risques de tsunamis.</p>
+				<p>Ce projet de recherche collaboratif est financé par l'<abbr title="Agence Nationale de la Recherche">ANR</abbr>, sur l'appel générique 2014, pour une durée de 42 mois entre 2014 et 2018.</p>
+				<p>Le projet est labellisé par les pôles de compétitivité <a href="http://www.capdigital.com/" target="_blank">CapDigital</a> et <a href="http://www.systematic-paris-region.org/" target="_blank">Systematic</a>.</p>
+			</div>
+			<div class="row mar-bot50 languageEn">
+				<p>Thanks to applications such as <a href="http://maps.google.com" target="_blank">Google Maps</a>, <a href="http://www.openstreetmap.org/#map=17/48.84355/2.42267" target="_blank">OpenStreetMap</a>
+				or the French <a href="http://www.geoportail.gouv.fr" target="_blank">geoportail</a>, citizens can now easily access to a large amount of
+				geographic data. Operations related to the combination of such data, and of their visualisations, as well as more basic operations related to
+				navigation, remain tough for users. For instance, getting details on a point of interest while keeping a global view of your itinerary demands <strong>many
+				actions and a heavy cognitive effort</strong>. Regarding specialist users, the problems can be even more complex and the performance expections are bigger.
+				During a crisis related to a natural hazard such as a tsunami, the analysts have to quickly identify the exposed areas, and have to efficiently communicate with the field operators.
+				MapMuxing gathers <abbr title="Human-Machine Interactions">HCI</abbr> and <abbr title="Geographic Information">GI</abbr> science researchers, in order to
+				propose new ways to combine different cartographical representations and efficiently navigate through these representations. The new methods we seek to develop
+				would combine techniques from automated cartography such as <a href="http://generalisation.icaci.org/" target="_blank">map generalisation</a> or
+				<a href="http://mapstyle.ign.fr" target="_blank">cartographical stylisation</a>, and innovative HCI techniques, such as the
+				<a href="http://dx.doi.org/10.1145/2380116.2380150" target="_blank">JellyLens</a>, which allow the mix of cartographic representations. The main application
+				of the project is the fluid navigation between cartographical representations during tasks related to tsunami hazard management.</p>
+				<p>This collaborative project is funded by <abbr title="Agence Nationale de la Recherche">ANR</abbr>, the French national research agency, for 42 months between 2014 and 2018. The beginning of the project is October, 1st 2014.</p>
+				<p>The project is approved by <a href="http://www.capdigital.com/" target="_blank">CapDigital</a> and <a href="http://www.systematic-paris-region.org/" target="_blank">Systematic</a> competitiveness clusters.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- spacer section:mix -->
+	<section id="mix" class="section mar-top40 mar-bot40" data-stellar-background-ratio="0.8"></section>
+	<section class="section mar-top40 mar-bot40"></section>
+
+
+		<!-- section news -->
+	<section id="news" class="section appear clearfix">
+		<div class="container">
+			<div class="row mar-top50 mar-bot50">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated languageFr" data-animation="bounceInUp">Actualités</h2>
+						<h2 class="section-heading animated languageEn" data-animation="bounceInUp">News</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Wrapper for slides -->
+				  <div class="carousel-inner">
+
+					<div class="item">
+					  <img src="img/logos/logo.png">
+					   <div class="carousel-caption">
+						<h4><a href="#">Séminaire de clôture du projet, le 28 mars 2019</a></h4>
+						<p>Le séminaire de clôture du projet MapMuxing aura lieu jeudi 28 mars 2019 à l'IGN, à Saint-Mandé (salle K24), de 10h à 12h. Des présentations et des démonstrations des résultats du projet sont prévues pendant ces deux heures, qui serons suivies d'un buffet pour permettre les discussions. Veuillez contacter Guillaume Touya par mail si vous souhaitez assister au séminaire.</p>
+					  </div>
+					</div><!-- End Item -->
+
+					<div class="item active">
+					  <img src="img/news/Agile.png">
+					   <div class="carousel-caption">
+						<h4 class="LanguageFr"><a href="http://generalisation.icaci.org/index.php/nextevents/12-next-events-details/95-workshop2016program">Présentation MapMuxing au Workshop "Automated generalisation for on-demand mapping" d'AGILE'16</a></h4>
+						<p>Marion Dumont du COGIT présentera le papier "Assessing the Variation of Visual Complexity in Multi-Scale Maps with Clutter Measures" issu de ses travaux de thèse au Workshop Automated generalisation for on-demand mapping organisé par la commission Généralisation et Représentation multiple de l'ACI, le 14 juin 2016 en marge de la conférence AGILE'2016.</p>
+					  </div>
+					</div><!-- End Item -->
+
+					 <div class="item">
+					  <img src="img/news/mapcomp.jpg">
+					   <div class="carousel-caption">
+						<h4><a href="#">ILDA recrute sur le projet MapMuxing</a></h4>
+						<p>L'équipe ILDA de l'INRIA, localisée sur le plateau de Saclay (Gif-sur-Yvette) recrute un post-doctorant pour 12 mois sur le projet MapMuxing. <a class="label label-primary" href="https://ilda.saclay.inria.fr/jobs.html" target="_blank">Offre sur le site web d'ILDA</a></p>
+					  </div>
+					</div><!-- End Item -->
+
+					<div class="item">
+					  <img src="img/news/IGN_recrute.png">
+					   <div class="carousel-caption">
+						<h4><a href="#">L'IGN recrute sur le projet MapMuxing</a></h4>
+						<p>L'équipe COGIT de l'IGN, localisée à Saint-Mandé (94) recrute un post-doctorant pour 16 mois sur le projet MapMuxing. <a class="label label-primary" href="http://recherche.ign.fr/labos/cogit/propositionsCOGIT.php" target="_blank">Offre pourvue</a></p>
+					  </div>
+					</div><!-- End Item -->
+
+				  </div><!-- End Carousel Inner -->
+
+
+				<ul class="list-group col-md-4">
+					<li data-target="#myCarousel" data-slide-to="0" class="list-group-item active">
+						<div class="LanguageFr"><h4>Présentation MapMuxing au Workshop "Automated generalisation for on-demand mapping" d'AGILE'16</h4></div>
+					</li>
+					<li data-target="#myCarousel" data-slide-to="1" class="list-group-item">
+						<div class="LanguageFr"><h4>ILDA recrute sur le projet MapMuxing</h4></div>
+					</li>
+					<li data-target="#myCarousel" data-slide-to="2" class="list-group-item">
+						<div class="LanguageFr"><h4>L'IGN recrute sur le projet MapMuxing</h4></div>
+					</li>
+					<li data-target="#myCarousel" data-slide-to="4" class="list-group-item">
+						<div class="LanguageFr"><h4>Présentation MapMuxing à la conférence GIScience 2016</h4></div>
+					</li>
+				</ul>
+
+				  <!-- Controls -->
+				  <div class="carousel-controls">
+					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					  </a>
+					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					  </a>
+				  </div>
+
+				</div><!-- End Carousel -->
+				<div class="row mar-top50">
+					<div class="col-md-4 col-md-offset-2">
+						<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/mapmux" data-widget-id="735740164320825344">Tweets by @mapmux</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- section about -->
+	<section id="about" class="section appear clearfix">
+		<div class="container">
+			<div class="row mar-bot50">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated languageFr" data-animation="bounceInUp">Consortium</h2>
+						<h2 class="section-heading animated languageEn" data-animation="bounceInUp">About</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="panel panel-success">
+						<div class="panel-heading">
+							<h3 class="panel-title">IGN - COGIT</h3>
+						</div>
+						<div class="panel-body">
+							<p class="languageFr">Le laboratoire <a href="http://recherche.ign.fr/labos/cogit/accueilCOGIT.php">COGIT</a> de l'IGN est en charge à l'IGN des recherches liées à la gestion, la diffusion, la représentation et l’utilisation des données géographiques, en général déjà constituées sous la forme de référentiels vectorisés et à grande échelle. Il compte notamment une équipe de recherche en cartographie et géovisualisation.</p>
+							<p class="languageFr">Les participants au projet sont :</p>
+							<p class="languageEn"><a href="http://recherche.ign.fr/labos/cogit/english/accueilCOGIT.php">COGIT</a> lab is in charge at IGN, the French National Mapping Agency, of research related to management, diffusion, representation, and use of geographic information, and particularly vector data. One of its teams is in charge of research on cartography and geovisualisation.</p>
+							<p class="languageEn">Project members:</p>
+							<ul>
+								<li class="languageFr"><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=Guillaume&nom=Touya" class="list-group-item languageFr">Guillaume Touya, porteur du projet</a></li>
+								<li class="languageEn"><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=Guillaume&nom=Touya" class="list-group-item languageEn">Guillaume Touya, project leader</a></li>
+								<li><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=Sidonie&nom=Christophe" class="list-group-item">Sidonie Christophe</a></li>
+								<li><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=Charlotte&nom=Hoarau" class="list-group-item">Charlotte Hoarau</a></li>
+								<li><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=Marion&nom=Dumont" class="list-group-item">Marion Dumont</a></li>
+								<li><a href="http://recherche.ign.fr/labos/cogit/cv.php?nom=Duchene" class="list-group-item">Cécile Duchêne</a></li>
+								<li><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=Arnaud&nom=Le%20Guilcher" class="list-group-item">Arnaud Le Guilcher</a></li>
+								<li><a href="http://recherche.ign.fr/labos/cogit/cv.php?prenom=J%E9r%E9mie&nom=Ory" class="list-group-item">Jérémie Ory</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<h3 class="panel-title">INRIA Saclay</h3>
+						</div>
+						<div class="panel-body">
+							<p class="languageFr"><a href="http://ilda.saclay.inria.fr">ILDA</a> est une équipe de recherche commune à l'INRIA, le CNRS et l'Université Paris-Sud, spécialisée en interfaces homme-machines (IHM). Elle étudie la conception, l'implémentation et l'évaluation des systèmes interactifs orientés données, permettant aux utilisateurs de mieux interagir avec des jeux de données complexes, hétérogènes et interconnectés.</p>
+							<p class="languageFr">Les participants au projet sont :</p>
+							<p class="languageEn"><a href="http://ilda.saclay.inria.fr">ILDA</a> is a research team at INRIA, CNRS and Université Paris-Sud specialized in Human Computer Interaction. The team focuses on the design, implementation and evaluation of data-centric interactive systems that let users efficiently navigate and manipulate large, heterogeneous and interconnected datasets.</p>
+							<p class="languageEn">Project members:</p>
+							<ul>
+								<li><a href="http://pages.saclay.inria.fr/emmanuel.pietriga/" class="list-group-item">Emmanuel Pietriga</a></li>
+								<li><a href="https://www.lri.fr/~appert/website/cv.html" class="list-group-item">Caroline Appert</a></li>
+								<li><a href="" class="list-group-item">María Jesús Lobo</a></li>
+								<li><a href="https://www.lri.fr/~chapuis/" class="list-group-item">Olivier Chapuis</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="panel panel-warning">
+						<div class="panel-heading">
+							<h3 class="panel-title">UMR GRED</h3>
+						</div>
+						<div class="panel-body">
+							<p class="languageFr">L'<a href="http://www.gred.ird.fr/">UMR GRED</a> regroupe des équipes de l'IRD et de l'Université Montpellier 3 autour des relations des sociétés à l’ « environnement » et des relations entre les membres de ces sociétés, dans leur rapport à l’ « environnement ». La question des risques et de la vulnérabilité des territoires est un des axes majeurs de l'UMR. </p>
+							<p class="languageFr">Les participants au projet sont :</p>
+							<p class="languageEn"><a href="http://www.gred.ird.fr/">UMR GRED</a> is research group that gathers researchers from IRD and Montpellier 3 University. GRED research topics are related to the relationships between societies (or members of the societies) and the environment. The question of natural hazard is a central research axis. </p>
+							<p class="languageEn">Project members:</p>
+							<ul>
+								<li><a href="http://www.gred.ird.fr/membres/membres-permanents/girres-jean-francois" class="list-group-item">Jean-François Girres</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- spacer section:styletopo -->
+	<section id="styletopo" class="section mar-top40 mar-bot40" data-stellar-background-ratio="0.8"></section>
+	<section class="section mar-top40 mar-bot40"></section>
+
+	<!-- section galerie -->
+	<section id="galerie" class="section appear clearfix">
+		<div class="container">
+			<div class="row mar-bot50">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header languageFr">
+						<h2 class="section-heading animated" data-animation="bounceInUp">Galeries</h2>
+						<p>Galerie d'images, vidéos et présentations illustrant les résultats du projet.</p>
+					</div>
+					<div class="section-header languageEn">
+						<h2 class="section-heading animated" data-animation="bounceInUp">Galleries</h2>
+						<p>Gallery of pictures, videos et presentations that illustrate the project results.</p>
+					</div>
+				</div>
+			</div>
+
+            <div class="row">
+                <nav id="filter" class="col-md-12 text-center">
+                    <div class="btn-group">
+                        <a href="#images" class="btn btn-default current btn-sm languageFr" data-filter=".images">Images</a></li>
+                        <a href="#videos"  class="btn btn-default btn-sm languageFr" data-filter=".videos" >Vidéos</a></li>
+						<a href="#presentations"  class="btn btn-default btn-sm languageFr" data-filter=".presentations" >Présentations</a></li>
+						<a href="#images" class="btn btn-default current btn-sm languageEn" data-filter=".images">Pictures</a></li>
+                        <a href="#videos"  class="btn btn-default btn-sm languageEn" data-filter=".videos" >Videos</a></li>
+						<a href="#presentations"  class="btn btn-default btn-sm languageEn" data-filter=".presentations" >Slides</a></li>
+                    </div>
+                </nav>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+                            <article class="col-md-4 isotopeItem images">
+								<div class="portfolio-item">
+									<img src="img/galerie/continuum_horizontal.jpg" alt="" />
+									<div class="portfolio-desc align-center">
+										<div class="folio-info">
+											<h5 class="languageFr"><a href="#">Continuum horizontal entre une carte et une photographie aérienne (Hoarau et al 2013)</a></h5>
+											<h5 class="languageEn"><a href="#">Horizontal Continuum between a map and an aerial photograph (Hoarau et al 2013)</a></h5>
+											<a href="img/galerie/continuum_horizontal.jpg" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+										</div>
+									</div>
+								</div>
+                            </article>
+
+                            <article class="col-md-4 isotopeItem images">
+								<div class="portfolio-item">
+									<img src="img/galerie/RepresentationBatiMultiEchelles.png" alt="" />
+									<div class="portfolio-desc">
+										<div class="folio-info">
+											<h5 class="languageFr"><a href="#">Représentation multi-échelles des bâtiments dans les cartes de différents géoportails (M. Dumont)</a></h5>
+											<h5 class="languageEn"><a href="#">Multi-scales representation of buildings acroos the maps of several geovisualization portals (M. Dumont)</a></h5>
+											<a href="img/galerie/RepresentationBatiMultiEchelles.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+										</div>
+									</div>
+								</div>
+                            </article>
+							<article class="col-md-4 isotopeItem images">
+								<div class="portfolio-item">
+									<img src="img/galerie/results_railroad.png" alt="" />
+									<div class="portfolio-desc">
+										<div class="folio-info">
+											<h5 class="languageFr"><a href="#girresTouya14">Généralisation de réseau ferré cohérente avec les autres niveaux d'échelle (Girres & Touya 2014)</a></h5>
+											<h5 class="languageEn"><a href="#girresTouya14">Railroad network map generalisation consistent with multiple scale levels (Girres & Touya 2014)</a></h5>
+											<a href="img/galerie/results_railroad.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+										</div>
+									</div>
+								</div>
+                            </article>
+							<article class="col-md-4 isotopeItem images">
+								<div class="portfolio-item">
+									<img src="img/galerie/continuum_IGN_OSM.png" alt="" />
+									<div class="portfolio-desc">
+										<div class="folio-info">
+											<h5 class="languageFr"><a href="#">Continuum de styles cartographiques entre le style IGN et le style OSM avec des données IGN (Ory et al. 2017)</a></h5>
+											<h5 class="languageEn"><a href="#">Cartographic style continuum between IGN style and OSM style with IGN data at both ends (Ory et al. 2017)</a></h5>
+											<a href="img/galerie/continuum_IGN_OSM.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+										</div>
+									</div>
+								</div>
+                            </article>
+							<article class="col-md-4 isotopeItem images">
+								<div class="portfolio-item">
+									<img src="img/galerie/results_agent_strategy.png" alt="" />
+									<div class="portfolio-desc">
+										<div class="folio-info">
+											<h5 class="languageFr"><a href="#">Continuum de d'échelles utilisant les techniques multi-agents de la plateforme CartAGen</a></h5>
+											<h5 class="languageEn"><a href="#">Scale continuum using agent-based map generalization techniques from CartAGen platform</a></h5>
+											<a href="img/galerie/results_agent_strategy.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+										</div>
+									</div>
+								</div>
+                            </article>
+							<article class="col-md-4 isotopeItem images">
+								<div class="portfolio-item">
+									<img src="img/galerie/drag_mag_wilder.png" alt="" />
+									<div class="portfolio-desc">
+										<div class="folio-info">
+											<h5 class="languageFr"><a href="#">Utilisation d'une interface de type DragMag sur le mur Wilder</a></h5>
+											<h5 class="languageEn"><a href="#">Use of a DragMag interface on the WILDER wall-sized display</a></h5>
+											<a href="img/galerie/drag_mag_wilder.png" class="fancybox"><i class="fa fa-plus fa-2x"></i></a>
+										</div>
+									</div>
+								</div>
+              </article>
+							<article class="media hidden col-md-6 isotopeItem videos">
+								<div class="flex-video widescreen">
+									<iframe width="100%" height="100%" src="http://www.dailymotion.com/embed/video/x250hs0" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem videos">
+								<div class="flex-video widescreen">
+									<iframe width="100%" height="100%" src="http://www.dailymotion.com/embed/video/x374ay8" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem videos">
+								<div class="flex-video widescreen">
+									<iframe width="100%" height="100%" src="http://www.dailymotion.com/embed/video/x2cu8tx" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem videos">
+								<div class="flex-video widescreen">
+									<iframe width="100%" height="100%" src="http://www.dailymotion.com/embed/video/x5zxun9" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem videos">
+								<div class="flex-video widescreen">
+									<iframe width="100%" height="100%" src="http://www.dailymotion.com/embed/video/x5zxsru" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem videos">
+								<div class="flex-video widescreen">
+									<iframe width="100%" height="100%" src="http://www.dailymotion.com/embed/video/x2cu8tx" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem presentations">
+								<div class="flex-video widescreen">
+									<iframe src="http://www.slideshare.net/slideshow/embed_code/38592602" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem presentations">
+								<div class="flex-video widescreen">
+									<iframe src="http://www.slideshare.net/slideshow/embed_code/key/LjNqUaMAVwItAL" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem presentations">
+								<div class="flex-video widescreen">
+									<iframe src="http://www.slideshare.net/slideshow/embed_code/key/4irksARIwfWPvM" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+								</div>
+							</article>
+							<article class="media hidden col-md-6 isotopeItem presentations">
+								<div class="flex-video widescreen">
+									<iframe src="http://www.slideshare.net/slideshow/embed_code/key/lG6ni9iUdZfF9D" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- spacer section:style -->
+	<section id="style" class="section mar-top40 mar-bot40" data-stellar-background-ratio="0.8"></section>
+	<section class="section mar-top40 mar-bot40"></section>
+
+	<!-- section publications -->
+	<section id="publis" class="section appear clearfix">
+		<div class="container">
+			<div class="row mar-bot50">
+				<div class="col-md-offset-3 col-md-6">
+					<div class="section-header">
+						<h2 class="section-heading animated" data-animation="bounceInUp">Publications</h2>
+						<p class="languageFr">Liste des publications liées au projet.</p>
+						<p class="languageEn">List of publications related to the project.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Articles de revue</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li class="bib">M.-J. Lobo, C. Appert, E. Pietriga, <a class="bib" href="https://doi.org/10.1109/TVCG.2018.2796557">Animation Plans for Before-and-After Satellite Images</a>, <em>IEEE Transactions on Visualization and Computer Graphics</em>, Volume 25, Issue 2, pages 1347-1360, 2019
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/lobo_et_al_19.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="https://www.researchgate.net/publication/323925752_Systematic_Error_Reduction_in_Geometric_Measurements_Based_on_Altimetric_Enrichment_of_Geographical_Features" class="imgLink"><img src="img/icons/researchgate.png" height="10" alt="ResearchGate" title="ResearchGate"></a>
+									</div>
+								</li>
+                <li class="bib">J.-F. Girres, <a class="bib" href="http://dx.doi.org/10.3138/cart.53.1.2017-0006">Systematic error reduction in geometric measurements based on altimetric enrichment of geographical features</a>, <em>Cartographica</em>, Volume 53, Issue 1, pages 52-61, 2018
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/girres_18.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="http://ilda.saclay.inria.fr/mapmuxing/baia/baia_TVCG_2018.mp4" class="imgLink"><img src="img/icons/qt.png" height="15" alt="Companion Video (Quicktime H.264)" title="companion video (Quicktime H.264)"></a>
+										<a href="http://ieeexplore.ieee.org/document/8267097/" class="imgLink"><img src="img/icons/ieee.png" height="15" alt="IEEE Xplore" title="IEEE Xplore"></a>
+										<a href="https://hal.inria.fr/hal-01773882/en" class="imgLink"><img src="img/icons/halinria.png" height="10" alt="HAL-INRIA" title="HAL-INRIA"></a>
+									</div>
+								</li>
+								<li class="bib">M.-J. Lobo, E. Pietriga, C. Appert, <a class="bib" href="http://www.tandfonline.com/doi/full/10.1080/13658816.2017.1325488">MapMosaic: Dynamic Layer Compositing for Interactive Geovisualization</a>, <em>International Journal of Geographical Information Science</em>, Volume 31, Issue 9, pages 1818-1845, 2017
+								</li>
+								<li class="bib">J.-F. Girres, F. Leone, M. Péroche, G. Gustave, M. Gherardi, <a class="bib" href="https://www.tandfonline.com/doi/abs/10.1080/23729333.2018.1440711?journalCode=tica20">Analysis of tsunami evacuation maps for a consensual symbolization rules proposal</a>, <em>International Journal of Cartography</em>, Volume 4, Issue 1, pages 4-24, 2016
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/Girres_et_Al_2016.bib','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="https://doi.org/10.1080/23729333.2018.1440711" class="imgLink"><img src="img/icons/tandf.jpg" height="16" alt="Taylor & Francis Online" title="Taylor & Francis Online"></a>
+									</div>
+								</li>
+                <li class="bib">J.-F. Girres, <a class="bib" href="http://dx.doi.org/10.5194/isprsannals-II-3-W5-305-2015">Estimation of geographical databases capture scale based on inter-vertices distances exploration</a>, <em>ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, Volume II-3/W5, pages 305-310, 2015
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/girres_15.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									</div>
+								</li>
+								<li class="bib">G. Touya, B. Decherf, M. Lalanne, M. Dumont, <a class="bib" href="http://dx.doi.org/10.5194/isprsannals-II-3-W5-227-2015">Comparing Image-Based methods for assessing visual clutter in generalized maps</a>, <em>ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em>, Volume II-3/W5, pages 227-233, 2015
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/touya_et_al_ISSDQ_2015.bib','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="http://dx.doi.org/10.5194/isprsannals-II-3-W5-227-2015" class="imgLink"><img src="img/icons/isprs.png" height="16" alt="ISPRS" title="ISPRS"></a>
+									</div>
+								</li>
+								<li class="bib">G. Touya, J.-F. Girres, <a class="bib" href="http://dx.doi.org/10.1080/15230406.2013.809233">ScaleMaster 2.0: a ScaleMaster extension to monitor automatic multi-scales generalizations</a>, <em>Cartography and Geographic Information Science</em>, Volume 40, Issue 3, pages 192-200, June 2013
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/touyaGirres13.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="http://dx.doi.org/10.1080/15230406.2013.809233" class="imgLink"><img src="img/icons/tandf.jpg" height="16" alt="Taylor & Francis Online" title="Taylor & Francis Online"></a>
+									</div>
+								</li>
+								<li class="bib">S. Christophe, C. Hoarau, <a class="bib" href="http://www.cartographicperspectives.org/index.php/journal/article/view/cp73-christophehoarau">Expressive Map Design Based on Pop Art: Revisit of Semiology of Graphics?</a>, <em>Cartographic Perspectives</em>, Volume 73, 2013
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/christopheHoarau12.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="http://www.cartographicperspectives.org/index.php/journal/article/view/cp73-christophehoarau" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+									</div>
+								</li>
+								<li class="bib">E. Pietriga, O. Bau, C. Appert, <a class="bib" href="http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.98">Representation-Independent In-Place Magnification with Sigma Lenses</a>, <em>IEEE Transactions on Visualization and Computer Graphics (TVCG)</em>, Volume 16, Issue 3, pages 455-467, May/June 2010
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/tvcg09.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="2009/08/TVCG-2009-03-0060_video.mov" class="imgLink"><img src="img/icons/qt.png" height="15" alt="Companion Video (Quicktime H.264)" title="companion video (Quicktime H.264)"></a>
+										<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5226626" class="imgLink"><img src="img/icons/ieee.png" height="15" alt="IEEE Xplore" title="IEEE Xplore"></a>
+										<a href="http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.98" class="imgLink"><img src="img/icons/ieee-cs.png" height="16" alt="IEEE CSDL" title="IEEE CSDL"></a>
+										<a href="http://hal.inria.fr/inria-00467658/en" class="imgLink"><img src="img/icons/halinria.png" height="10" alt="HAL-INRIA" title="HAL-INRIA"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Actes de conférence</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+                <li class="bib">J.-F. Girres, Reduction of Systematic Length Error Involved by Polygonal Approximation of Curves using Polynomial Interpolation Methods, in Ge Y., Li X., and Heuvelink G., <em>Proceedings of the 13th International Symposium on Spatial Accuracy Assessment in Natural Resources & Environmental Sciences (ACCURACY'18)</em>, 21-25 mai, Pekin (Chine).
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/girres_18_accuracy.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+								</li>
+								<li class="bib">V. Rusňák, C. Appert, O. Chapuis, E. Pietriga, Designing Coherent Gesture Sets for Multi-scale Navigation on Tabletops, <em>CHI '18: Proceedings of the 36th SIGCHI conference on Human Factors in computing systems</em>, April 2018, Montreal, Canada
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/rusnak_et_al_2018.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+								</li>
+								<li class="bib">M. Dumont, G. Touya, C. Duchêne, <a class="bib" href="https://www.researchgate.net/publication/318502829_Alternative_transitions_between_existing_representations_in_multi-scale_maps">Alternative transitions between existing representations in multi-scale maps</a>, <em>ICC'17: Proceedings of 28th International Cartographic Conference</em>, July 2017, Washington, DC, USA
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/dumont_et_al_2017.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="./pdf/ICC2017_Dumont_et_al.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">J. Ory, G. Touya, C. Hoarau, S. Christophe, <a class="bib" href="https://www.researchgate.net/publication/318466208_How_to_design_a_cartographic_continuum_to_help_users_to_navigate_between_two_topographic_styles">How to design a cartographic continuum to help users to navigate between two topographic styles?</a>, <em>ICC'17: Proceedings of 28th International Cartographic Conference</em>, July 2017, Washington, DC, USA
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/ory_et_al_2017.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="./pdf/ICC2017_Ory_et_al.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">G. Touya, T. Chassin, <a class="bib" href="https://www.researchgate.net/publication/318495558_RJMCMC_based_Text_Placement_to_Optimize_Label_Placement_and_Quantity">RJMCMC based Text Placement to Optimize Label Placement and Quantity</a>, <em>ICC'17: Proceedings of 28th International Cartographic Conference</em>, July 2017, Washington, DC, USA
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/touya_chassin_2017.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="./pdf/ICC2017_Touya_Chassin.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">G. Touya, M. Dumont, <a class="bib" href="https://www.researchgate.net/publication/318463713_Progressive_Block_Graying_and_Landmarks_Enhancing_as_Intermediate_Representations_between_Buildings_and_Urban_Areas">Progressive Block Graying and Landmarks Enhancing as Intermediate Representations between Buildings and Urban Areas</a>, <em>Proceedings of 20th ICA Workshop on Generalisation and Multiple Representation</em>, July 2017, Washington, DC, USA
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/touya_dumont_2017.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="./pdf/ICA-Workshop-Touya-Dumont.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+                <li class="bib">J.-F. Girres, Sola, G., Modeling and representation of spatial uncertainty in risk maps. Application to danger areas related to marine submersion hazard, <em>Proceedings of the 28th International Cartographic Conference (ICC'17)</em>, 2-7 juillet 2017, Washington, DC, (US).
+                  <span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/girres_17.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+                </li>
+                <li class="bib">J.-F. Girres, Simulation of realistic digitizing errors on geographical objects using constraints modeling the operator input process, <em>Proceedings of the 12th International Symposium on Spatial Accuracy Assessment in Natural Resources & Environmental Sciences (ACCURACY'16)</em>, 6-8 juillet 2016, Montpellier (France).
+                  <span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/girres_16.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+                </li>
+								<li class="bib">M. Dumont, G. Touya, C. Duchêne, <a class="bib" href="https://www.researchgate.net/publication/318868826_A_comparative_study_of_existing_multi-scale_maps_what_content_at_which_scale">A Comparative Study of Existing Multi-Scale Maps: What Content at Which Scale?</a>, <em>GIScience 2016: Proceedings of the 9th International Conference on Geographic Information Science</em>, page 92--95, September 2016, Montreal, Canada
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/dumont_et_al_2016b.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="./pdf/GIScience2016_Dumont_et_al.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">M. Dumont, G. Touya, C. Duchêne, <a class="bib" href="http://dx.doi.org/10.13140/RG.2.1.4775.3849">Assessing the Variation of Visual Complexity in Multi-Scale Maps with Clutter Measures, </a>, <em>AGILE 2016: Proceedings of AGILE workshop on “Automated generalisation for on-demand mapping” and 19th ICA Workshop on Generalisation and Multiple Representation</em>, June 2016, Helsinki, Finland
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/dumont_et_al_2016.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="http://dx.doi.org/10.13140/RG.2.1.4775.3849" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">J.-F. Girres, G. Touya, <a class="bib" href="http://icaci.org/files/documents/ICC_proceedings/ICC2015/papers/3/638.html"> A framework to formalize multi-scales land-use generalization in the ScaleMaster 2.0, </a>, <em>ICC'15: Proceedings of 27th International Cartographic Conference</em>, August 2015, Rio de Janeiro, Brazil
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/Girres_Touya_ICC2015_bib.bib','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="http://icaci.org/files/documents/ICC_proceedings/ICC2015/papers/3/fullpaper/T3-638_1428572311.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">M. Dumont, G. Touya, C. Duchêne, <a class="bib" href="http://generalisation.icaci.org/images/files/workshop/workshop2015/genemr2015_submission_6.pdf">Automated Generalisation of Intermediate Levels in a Multi-Scale Pyramid, </a>, <em>Proceedings of 18th ICA Workshop on Generalisation and Multiple Representation </em>, August 2015, Rio de Janeiro, Brazil
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/dumont_et_al_2015.bib','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+									<a href="http://generalisation.icaci.org/images/files/workshop/workshop2015/genemr2015_submission_6.pdf" class="imgLink"><img src="img/icons/pdf_icon.gif" height="16" alt="Full Access" title="Full Access"></a>
+								</li>
+								<li class="bib">M.-J. Lobo, E. Pietriga, C. Appert, <a class="bib" href="">An Evaluation of Interactive Map Comparison Techniques, </a>, <em>CHI '15: Proceedings of the 33rd SIGCHI conference on Human Factors in computing systems </em>,10 pages, April 2015, Seoul, South Korea
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/LoboPietrigaAppert15.htm','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+								</li>
+							    <li id="jelly" class="bib">C. Pindat, E. Pietriga, O. Chapuis, C. Puech, <a class="bib" href="http://dx.doi.org/10.1145/2380116.2380150">JellyLens: Content-Aware Adaptive Lenses</a>, <em>UIST '12: Proceedings of the 25th Symposium on User Interface Software and Technology</em>, pages 261-270, October 2012, Cambridge, USA
+									<div class="pubLink">
+										<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/pindat12.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+										<a href="http://pages.saclay.inria.fr/emmanuel.pietriga/2012/10/jelly-lenses-UIST2012.mov" class="imgLink"><img src="img/icons/qt.png" height="15" alt="Companion Video (Quicktime H.264)" title="companion video (Quicktime H.264)"></a>
+										<a href="http://dl.acm.org/authorize?6749713" class="imgLink"><img src="img/icons/acm.png" height="15" alt="ACM Digital Library" title="ACM Digital Library"></a>
+										<a href="http://hal.inria.fr/hal-00721574/en" class="imgLink"><img src="img/icons/halinria.png" height="10" alt="HAL-INRIA" title="HAL-INRIA"></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Posters</h3>
+						</div>
+						<div class="panel-body">
+							<ul>
+								<li class="bib" id="girresTouya14">J.-F. Girres, G. Touya,<a class="bib" href="">Cartographic generalisation aware of multiple representations</a>. In M. Duckham, K. Stewart, and E. Pebesma (Eds.), <em>Proceedings of GIScience 2014 - Poster session</em>, Vienna, Austria, 23-26 september 2014.
+									<span class="bibtex"><input type="image" src="img/icons/bibtex.png" alt="BibTeX entry for this article" title="BibTeX entry for this article" onclick="window.open('bib/girresTouya14.html','BibTex','width=800,height=200,top=100,left=100,scrollbars=yes,resizable=yes');"></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
+	<section id="footer" class="section footer">
+		<div class="container">
+			<div class="row animated opacity mar-bot20 center-block" data-andown="fadeIn" data-animation="animation">
+				<div class="col-sm-12 center-block">
+                    <ul class="social-network social-circle">
+                        <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="http://www.dailymotion.com/mapmuxing" class="icoDailymotion" title="Dailymotion"><i class="fa fa-dailymotion"></i></a></li>
+                        <li><a href="https://twitter.com/mapmux" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="http://fr.slideshare.net/MapMuxing" class="icoSlideshare" title="SlideShare"><i class="fa fa-slideshare"></i></a></li>
+                    </ul>
+				</div>
+			</div>
+
+			<div class="row align-center copyright">
+					<div class="col-sm-12"><p>Copyright &copy; 2015 IGN - Institut National de l'Information Géographique et Forestière</p></div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.isotope.min.js"></script>
+	<script src="js/jquery.nicescroll.min.js"></script>
+	<script src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="js/skrollr.min.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.appear.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/main.js"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+  </body>
+</html>
